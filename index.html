@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria's Journal</title>
+  <style>
+    body {
+      background-color: #d8e6e7;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #total {
+      background-color: #ffffff;
+      width: 800px;
+      margin: 30px auto;
+      box-shadow: 0px 0px 5px #aaa;
+      border: 1px solid #ccc;
+    }
+
+    #header {
+      background-color: #a8f0ef;
+      text-align: right;
+      padding: 15px 30px 10px 0;/i research it top right left bottom/
+    }
+
+    #header h1 {
+      color: #008c8c;
+      margin: 0;
+    }
+
+    #header p {
+      color: #008c8c;
+      margin: 0;
+    }
+
+    #mainbody {
+      display: flex;
+      padding: 15px;
+    }
+
+   
+    #friends {
+      background-color: #3fe0d0;
+      border: 4px solid #078b8b;
+      border-radius: 5px;
+      width: 200px;
+      padding: 10px;
+      margin-right: 20px;
+      height: fit-content;
+    }
+
+    #friends h2 {
+      margin-top: 0;
+      color: #005b5b;
+    }
+
+    #friends ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    #friends a {
+      color: #004949;
+      text-decoration: none;
+    }
+
+    #friends a:hover {
+      text-decoration: underline;
+    }
+
+    /* Extra white area beneath Friends (no border) */
+    #extra {
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      height: 100px; /* adjust to control white space */
+      margin-top: 20px;
+    }
+
+    /* Entries area */
+    #entries {
+      flex: 1;
+    }
+
+    #entry, #post {
+      background-color: #e5f5f6;
+      border: 1px solid #c3e1e3;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    #entry h2, #post h2 {
+      color: #229b9b;
+      margin-top: 0;
+    }
+
+    /* Fix images */
+    #entry img, #post img {
+      float: right;
+      width: 120px;
+      height: auto;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      margin-left: 15px;
+    }
+
+    #entry p, #post p {
+      color: #333;
+      text-align: justify;
+    }
+
+    /* Date underline style */
+    .date {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .underline {
+      display: inline-block;
+      border-bottom: 1px solid black;
+      min-width: 40px; /* adjust for line length */
+      text-align: center;
+      padding-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="total">
+    <div id="header">
+      <h1>Victoria's Journal</h1>
+      <p>So fresh and so clean</p>
+    </div>
+
+    <div id="mainbody">
+      <div>
+        <div id="friends">
+          <h2>Friends</h2>
+          <ul>
+            <li><a href="#">390 Buddies</a></li>
+            <li><a href="#">Big Will</a></li>
+            <li><a href="#">Camille</a></li>
+          </ul>
+        </div>
+
+        <!-- Clean white space only -->
+        <div id="extra"></div>
+      </div>
+
+      <div id="entries">
+
+        <div id="entry">
+          <div class="date">
+             
+           
+          </div>
+          <h2>04/08/08 : Spatulas</h2>
+          <img src="spatula.jpg" alt="Spatula">
+          <p>Yesterday, I went to the store and got some much needed spatulas! 
+            (What better way to say I love myself than to buy myself a spatula?)
+          </p>
+        </div>
+
+        <div id="post">
+          <div id="date">
+            
+           
+          </div>
+          <h2>04/08/08 : Cookie Cupcakes</h2>
+          <img src="cupcake.jpg" alt="Cupcakes">
+          <p>My favorite cartoon character is cookie, and my favorite dessert is cupcakes. 
+            So Cookie Cupcakes are best of both worlds. Did you know? Cookie character once said, 
+            “Sometimes me think what is love, and then me think love is what cookie is for. 
+            Me give up the last cookie for you.” I wonder if the same applies for cupcakes? 
+            (If so, I don’t think I can ever love ANYONE!)
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
